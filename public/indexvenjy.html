@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión - Orquesta Juvenil de Cobquecura</title>
+  <link rel="stylesheet" href="indexvenjy.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-music"></i>
+        <span>Panel Administrativo</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="#estudiantes"><i class="fas fa-users"></i> Estudiantes</a></li>
+        <li><a href="#profesores"><i class="fas fa-chalkboard-teacher"></i> Profesores</a></li>
+        <li><a href="#instrumentos"><i class="fas fa-guitar"></i> Instrumentos</a></li>
+        <li><a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+        <li><a href="#" class="btn-login"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+      </ul>
+      <div class="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>Sistema de Gestión Administrativa</h1>
+      <p>Herramientas para la administración de la Orquesta Juvenil de Cobquecura</p>
+    </div>
+  </header>
+
+  <section id="dashboard" class="section about-section">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-title">Resumen General</h2>
+        <p class="section-subtitle">Datos clave de la organización</p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="150">0</span>
+            <span class="stat-label">Estudiantes</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="8">0</span>
+            <span class="stat-label">Profesores</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="45">0</span>
+            <span class="stat-label">Instrumentos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="12">0</span>
+            <span class="stat-label">Próximos Eventos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="estudiantes" class="section mission-section">
+    <div class="container">
+      <h2 class="section-title">Gestión de Estudiantes</h2>
+      <p class="section-subtitle">Administra la información de los miembros de la orquesta</p>
+
+      <div class="table-container">
+        <div class="table-header">
+          <h3>Listado de Estudiantes</h3>
+          <button class="btn-primary"><i class="fas fa-plus"></i> Nuevo Estudiante</button>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Instrumento</th>
+              <th>Nivel</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1001</td>
+              <td>María ponyGonzález</td>
+              <td>15</td>
+              <td>Violín</td>
+              <td>Intermedio</td>
+              <td>
+                <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                <button class="btn-icon"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>1002</td>
+              <td>Xiko Braulio Muñoz</td>
+              <td>17</td>
+              <td>Violonchelo</td>
+              <td>Avanzado</td>
+              <td>
+                <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                <button class="btn-icon"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>1003</td>
+              <td>Andy do santos Silva</td>
+              <td>14</td>
+              <td>Flauta</td>
+              <td>Principiante</td>
+              <td>
+                <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                <button class="btn-icon"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="instrumentos" class="section events-section">
+    <div class="container">
+      <h2 class="section-title">Inventario de Instrumentos</h2>
+      <p class="section-subtitle">Control de instrumentos musicales</p>
+
+      <div class="cards-grid">
+        <div class="inventory-card">
+          <div class="card-icon">
+            <i class="fas fa-guitar"></i>
+          </div>
+          <h3>Violines</h3>
+          <p class="inventory-count">Disponibles: <span>12</span></p>
+          <p class="inventory-count">En préstamo: <span>8</span></p>
+          <button class="btn-secondary">Ver detalles</button>
+        </div>
+
+        <div class="inventory-card">
+          <div class="card-icon">
+            <i class="fas fa-drum"></i>
+          </div>
+          <h3>Violonchelos</h3>
+          <p class="inventory-count">Disponibles: <span>5</span></p>
+          <p class="inventory-count">En préstamo: <span>3</span></p>
+          <button class="btn-secondary">Ver detalles</button>
+        </div>
+
+        <div class="inventory-card">
+          <div class="card-icon">
+            <i class="fas fa-music"></i>
+          </div>
+          <h3>Flautas</h3>
+          <p class="inventory-count">Disponibles: <span>10</span></p>
+          <p class="inventory-count">En préstamo: <span>2</span></p>
+          <button class="btn-secondary">Ver detalles</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="eventos" class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title">Gestión de Eventos</h2>
+      <p class="section-subtitle">Programa y administra los próximos conciertos</p>
+
+      <div class="event-form">
+        <h3>Agregar Nuevo Evento</h3>
+        <form id="eventForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="eventName">Nombre del Evento</label>
+              <input type="text" id="eventName" required>
+            </div>
+            <div class="form-group">
+              <label for="eventDate">Fecha</label>
+              <input type="date" id="eventDate" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="eventLocation">Ubicación</label>
+              <input type="text" id="eventLocation" required>
+            </div>
+            <div class="form-group">
+              <label for="eventTime">Hora</label>
+              <input type="time" id="eventTime" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="eventDescription">Descripción</label>
+            <textarea id="eventDescription" rows="3" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Guardar Evento</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Reportes y Estadísticas</h2>
+        <p>Genera reportes detallados sobre asistencia, progreso de estudiantes y más.</p>
+        <div class="report-buttons">
+          <a href="#" class="btn-primary"><i class="fas fa-file-pdf"></i> Reporte Mensual</a>
+          <a href="#" class="btn-secondary"><i class="fas fa-file-excel"></i> Exportar Datos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-music"></i>
+          <span>Sistema de Gestión Administrativa</span>
+        </div>
+        <div class="footer-links">
+          <h3>Módulos</h3>
+          <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#estudiantes">Estudiantes</a></li>
+            <li><a href="#profesores">Profesores</a></li>
+            <li><a href="#instrumentos">Instrumentos</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h3>Información del Sistema</h3>
+          <p>Versión: 0.0.1</p>
+          <p>Última actualización: 24/05/2025</p>
+          <p>Soporte: soporte@orquestacobquecura.cl</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Orquesta Juvenil de Cobquecura. Sistema desarrollado para uso interno.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="indexvenjy.js"></script>
+</body>
+
+</html>
